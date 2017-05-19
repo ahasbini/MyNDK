@@ -22,6 +22,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "flavorEnvironment"
+    productFlavors {
+        flavor1 {
+            dimension "flavorEnvironment"
+        }
+        flavor2 {
+            dimension "flavorEnvironment"
+        }
+    }
     externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
